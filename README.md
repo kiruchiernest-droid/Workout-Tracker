@@ -1,4 +1,3 @@
-Set-Content -Path README.md -Value @"
 # Travel Weather & Country Information Tool
 
 A lightweight, reliable command-line application that acts as a destination companion by pulling live updates from multiple global endpoints simultaneously.
@@ -31,4 +30,3 @@ When traveling or researching a city, checking separate sources for climate cond
    ```bash
    python Exercise1_day3.py
    ```
-"@
