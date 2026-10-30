@@ -1,0 +1,52 @@
+# 🇰🇪 Kenyan Business Currency Tracker (KES Converter)
+
+A clean command-line interface utility designed to provide immediate international invoicing clarity for Kenyan businesses quoting clients abroad. 
+
+## 🛠️ What is this?
+This tool fetches live, real-time foreign exchange data from global financial registries to convert invoice totals in Kenyan Shillings (KES) into US Dollars (USD), Euros (EUR), and British Pounds (GBP). It helps local companies eliminate pricing estimation mistakes, logs quote histories to a local ledger database (`currency_quotes.json`), and automatically relies on robust fallback benchmarks if local firewalls block the internet connection.
+
+## 🚀 How do I run it?
+
+### 1. Install Project Dependencies
+Before running the tool, ensure you have the required Python data transmission library installed via your terminal:
+```bash
+pip install requests
+```
+
+### 2. Prepare the Workspace Environment
+No complex API key registration is required. Simply ensure you are executing the script inside your main lessons repository workspace folder:
+```powershell
+cd D:\Lessons
+```
+
+### 3. Launch the Application Routine
+Execute the central script using your system's Python compiler path:
+```powershell
+python kes_currency_tracker.py
+```
+
+---
+
+## 📊 What does it look like?
+
+Here is an example of the actual formatted terminal output when a Kenyan business inputs an invoice amount for verification:
+
+```text
+=======================================
+  🇰🇪  KENYAN BUSINESS CURRENCY TRACKER 
+=======================================
+Enter invoice amount in KES (e.g. 15000): 25000
+
+Fetching current global exchange tables... Please wait.
+
+[Notice]: Network restriction detected. Utilizing local fallback business exchange benchmarks.
+💾 Quote snapshot appended cleanly to local ledger database: currency_quotes.json
+
+=== 📊 Invoice Quote Summary ===
+• Base Value  : 25,000.00 KES
+--------------------------------
+• US Dollar   : \$ 195.00 USD
+• Euro Zone   : € 180.00 EUR
+• British Pnd : £ 150.00 GBP
+=======================================
+```
